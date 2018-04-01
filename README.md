@@ -8,7 +8,7 @@
 1. Clone this repository.
 1. Open `sdlsync.ps1` and set the value for `$LocalRepository`.
    This is the directory where you want to store a copy of items in the SDL repository.
-1. Open the file `netrc.ps1` the variables `$username`, `$password`, and `$url`. For example:
+1. Open the file `netrc.ps1` and set the variables `$username`, `$password`, and `$url`. For example:
 ```
 $username = 'bob'
 $password = '+@gS!7O]H4Ub2kq'
@@ -17,14 +17,12 @@ $url      = 'https://ccms.example.com/InfoShareWS/'
 
 ## Syncing SDL
 
-1. Run the program: `.\sdlsync.ps1`
+The first time you run `.\sdlsync.ps1`, the entire repository will sync to the specified
+directory. This will take several hours. The next time you run `sldsync.ps1`, only the
+files that were updated since the last run will be downloaded. 
 
-  The first time you run `sdlsync.ps1`, the entire repository will sync to the specified
-  directory. This will take several hours. The next time you run `sldsync.ps1`, only the
-  files that were updated since the last run will be downloaded. 
-
-1. Schedule the program to run as often as you want (e.g., every 10 minutes, every hour, 
-   every night).
+After the initial sync, schedule the program to run as often as you want (e.g., every 
+10 minutes, every hour, or every night).
 
 ## Filename length
 
@@ -39,3 +37,4 @@ failed to download.
 
 ## TODO
 - Let users specify a specific directory (rather than the whole repository) to sync.
+- Add fail warnings for topics that failed to download.
