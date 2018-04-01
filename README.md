@@ -1,6 +1,6 @@
 # sdlsync
 
-`sdlsync` keeps a local copy of an SDL LiveContent repository.
+`sdlsync` keeps a local copy of an SDL LiveContent (aka SDL Knowledge Center) repository.
 
 ## Setup
 
