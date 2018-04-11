@@ -7,9 +7,9 @@
 1. Install [ISHRemote](https://github.com/sdl/ISHRemote).
 1. Clone this repository.
 1. Open `sdlsync.ps1` and set the following values:
-  - `$LocalRepository`: the local directory to which files are synced.
-  - `$RemoteFolderPath`: the top-level directory you want to sync. Leave blank to sync everything.
-  - (Optional) `$IshTypeFilter`: the IshTypes you want to sync.
+	- `$LocalRepository`: the local directory to which files are synced.
+	- `$RemoteFolderPath`: the top-level directory you want to sync. Leave blank to sync everything.
+	- (Optional) `$IshTypeFilter`: the IshTypes you want to sync.
 1. Open the file `netrc.ps1` and set the variables `$username`, `$password`, and `$url`. For example:
 ```
 $username = 'bob'
